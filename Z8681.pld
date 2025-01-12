@@ -1,0 +1,41 @@
+Name        Z8681SBC;
+Partno      ;
+Revision    ;
+Date        05/29/2022;
+Designer    Jim Loos;
+Company     ;
+Location    ;
+Assembly    ;
+Device      G16V8A;
+
+/** Inputs **/
+pin 1  = AS;
+pin 2  = A15;
+pin 3  = A14;
+pin 4  = A13;
+pin 5  = A12;
+pin 6  = DM;
+pin 7  = DS;
+pin 8  = RW;
+
+/** Outputs **/
+pin 19 = LE;
+pin 18 = ROMCS;
+pin 17 = RAMCS;
+pin 16 = RD;
+pin 15 = WR;
+
+/*  just a reminder for me (Jim)... */
+/*  ! = NOT                         */
+/*  & = AND                         */
+/*  # = OR                          */
+/*  $ = XOR                         */
+
+ LE = !AS;
+!RD =  RW;
+!WR = !RW;
+
+FIELD ADDRESS = [A15..A12];
+!ROMCS = !DS & ADDRESS:[0XXX];
+!RAMCS = !DS & ADDRESS:[1XXX..2XXX];
+
