@@ -12,3 +12,6 @@ The Zilog Z8671 MCU is hard to find so here is the functional equivalent: a simp
 
 <p align="center"><img src="/images/Z8681 SBC GAL16V10.png"/>
 <p align="center">Z8681 SBC GAL16V8</p><br>
+
+<p align="center"><img src="/images/Z8681 SBC.png"/>
+<p align="center">Z8681 SBC</p><br>
